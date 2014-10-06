@@ -1,3 +1,5 @@
 linux-vgt.patch:
-	The patch should be applied to linux-3.11.6:
-	see http://kernel.ubuntu.com/git?p=ubuntu-archive/ubuntu-saucy.git;a=commitdiff;h=549fad2377f797d330565a7a7669b478ba474091
+	The patch should be applied to linux-3.14.1
+	git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+	git checkout -b v3.14.1 v3.14.1
+	patch -p1 < linux-vgt.patch
